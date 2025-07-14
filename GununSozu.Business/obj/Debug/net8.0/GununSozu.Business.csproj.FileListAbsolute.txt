@@ -1,0 +1,15 @@
+C:\Users\Administrator\GununSozu\GununSozu.Business\obj\Debug\net8.0\GununSozu.Business.csproj.AssemblyReference.cache
+C:\Users\Administrator\GununSozu\GununSozu.Business\obj\Debug\net8.0\GununSozu.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\GununSozu\GununSozu.Business\obj\Debug\net8.0\GununSozu.Business.AssemblyInfoInputs.cache
+C:\Users\Administrator\GununSozu\GununSozu.Business\obj\Debug\net8.0\GununSozu.Business.AssemblyInfo.cs
+C:\Users\Administrator\GununSozu\GununSozu.Business\obj\Debug\net8.0\GununSozu.Business.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\GununSozu\GununSozu.Business\bin\Debug\net8.0\GununSozu.Business.deps.json
+C:\Users\Administrator\GununSozu\GununSozu.Business\bin\Debug\net8.0\GununSozu.Business.dll
+C:\Users\Administrator\GununSozu\GununSozu.Business\bin\Debug\net8.0\GununSozu.Business.pdb
+C:\Users\Administrator\GununSozu\GununSozu.Business\bin\Debug\net8.0\GununSozu.Data.dll
+C:\Users\Administrator\GununSozu\GununSozu.Business\bin\Debug\net8.0\GununSozu.Data.pdb
+C:\Users\Administrator\GununSozu\GununSozu.Business\obj\Debug\net8.0\GununSoz.675B7A56.Up2Date
+C:\Users\Administrator\GununSozu\GununSozu.Business\obj\Debug\net8.0\GununSozu.Business.dll
+C:\Users\Administrator\GununSozu\GununSozu.Business\obj\Debug\net8.0\refint\GununSozu.Business.dll
+C:\Users\Administrator\GununSozu\GununSozu.Business\obj\Debug\net8.0\GununSozu.Business.pdb
+C:\Users\Administrator\GununSozu\GununSozu.Business\obj\Debug\net8.0\ref\GununSozu.Business.dll

@@ -1,0 +1,44 @@
+﻿@model IEnumerable<GununSozu.Business.DTOs.QuoteDto>
+@{
+    ViewData["Title"] = "Söz Listesi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">Söz Listesi</h2>
+    <a asp-area="Admin" asp-controller="Quote" asp-action="Create" class="btn btn-success">+ Yeni Söz Ekle</a>
+</div>
+
+<table class="table table-hover shadow-sm bg-white rounded">
+    <thead class="table-dark">
+        <tr>
+            <th>İçerik</th>
+            <th>Yazar</th>
+            <th>Aktif</th>
+            <th style="width:150px;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var quote in Model)
+        {
+            <tr>
+                <td>@quote.Content</td>
+                <td>@quote.Author</td>
+                <td>
+                    @if (quote.IsActive)
+                    {
+                        <span class="badge bg-success">Aktif</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Pasif</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@quote.Id" class="btn btn-sm btn-warning">Düzenle</a>
+                    <a asp-action="Delete" asp-route-id="@quote.Id" class="btn btn-sm btn-danger">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

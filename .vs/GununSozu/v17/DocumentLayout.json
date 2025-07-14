@@ -1,0 +1,131 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\GununSozu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0189B233-4BEA-4050-A564-8D43D8DEE426}|GununSozu.Web\\GununSozu.Web.csproj|c:\\users\\administrator\\gununsozu\\gununsozu.web\\areas\\admin\\controllers\\quotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0189B233-4BEA-4050-A564-8D43D8DEE426}|GununSozu.Web\\GununSozu.Web.csproj|solutionrelative:gununsozu.web\\areas\\admin\\controllers\\quotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C891BD7D-2655-4E6E-BEEA-34D20F722625}|GununSozu.Business\\GununSozu.Business.csproj|c:\\users\\administrator\\gununsozu\\gununsozu.business\\services\\quoteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C891BD7D-2655-4E6E-BEEA-34D20F722625}|GununSozu.Business\\GununSozu.Business.csproj|solutionrelative:gununsozu.business\\services\\quoteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0189B233-4BEA-4050-A564-8D43D8DEE426}|GununSozu.Web\\GununSozu.Web.csproj|c:\\users\\administrator\\gununsozu\\gununsozu.web\\areas\\admin\\views\\quote\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0189B233-4BEA-4050-A564-8D43D8DEE426}|GununSozu.Web\\GununSozu.Web.csproj|solutionrelative:gununsozu.web\\areas\\admin\\views\\quote\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0189B233-4BEA-4050-A564-8D43D8DEE426}|GununSozu.Web\\GununSozu.Web.csproj|c:\\users\\administrator\\gununsozu\\gununsozu.web\\areas\\admin\\views\\quote\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0189B233-4BEA-4050-A564-8D43D8DEE426}|GununSozu.Web\\GununSozu.Web.csproj|solutionrelative:gununsozu.web\\areas\\admin\\views\\quote\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0189B233-4BEA-4050-A564-8D43D8DEE426}|GununSozu.Web\\GununSozu.Web.csproj|c:\\users\\administrator\\gununsozu\\gununsozu.web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0189B233-4BEA-4050-A564-8D43D8DEE426}|GununSozu.Web\\GununSozu.Web.csproj|solutionrelative:gununsozu.web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1182,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\GununSozu\\GununSozu.Web\\Areas\\Admin\\Views\\Quote\\Create.cshtml",
+              "RelativeDocumentMoniker": "GununSozu.Web\\Areas\\Admin\\Views\\Quote\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\GununSozu\\GununSozu.Web\\Areas\\Admin\\Views\\Quote\\Create.cshtml",
+              "RelativeToolTip": "GununSozu.Web\\Areas\\Admin\\Views\\Quote\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-14T22:42:46.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\GununSozu\\GununSozu.Web\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "GununSozu.Web\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\GununSozu\\GununSozu.Web\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "GununSozu.Web\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-14T22:38:39.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\GununSozu\\GununSozu.Web\\Areas\\Admin\\Views\\Quote\\Index.cshtml",
+              "RelativeDocumentMoniker": "GununSozu.Web\\Areas\\Admin\\Views\\Quote\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\GununSozu\\GununSozu.Web\\Areas\\Admin\\Views\\Quote\\Index.cshtml",
+              "RelativeToolTip": "GununSozu.Web\\Areas\\Admin\\Views\\Quote\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-14T22:33:38.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuoteService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\GununSozu\\GununSozu.Business\\Services\\QuoteService.cs",
+              "RelativeDocumentMoniker": "GununSozu.Business\\Services\\QuoteService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\GununSozu\\GununSozu.Business\\Services\\QuoteService.cs",
+              "RelativeToolTip": "GununSozu.Business\\Services\\QuoteService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAkwD0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T22:33:18.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuoteController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\GununSozu\\GununSozu.Web\\Areas\\Admin\\Controllers\\QuoteController.cs",
+              "RelativeDocumentMoniker": "GununSozu.Web\\Areas\\Admin\\Controllers\\QuoteController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\GununSozu\\GununSozu.Web\\Areas\\Admin\\Controllers\\QuoteController.cs",
+              "RelativeToolTip": "GununSozu.Web\\Areas\\Admin\\Controllers\\QuoteController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T22:31:45.748Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 443,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
