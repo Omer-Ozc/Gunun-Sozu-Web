@@ -1,12 +1,7 @@
 ﻿using GununSozu.Business.DTOs;
 using GununSozu.Business.Interfaces;
-using GununSozu.Data;
 using GununSozu.Data.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace GununSozu.Business.Services
 {
@@ -74,6 +69,33 @@ namespace GununSozu.Business.Services
                 CategoryName = q.Category?.Name,
                 LanguageName = q.Language?.Name
             }).ToList();
+        }
+
+        public async Task SetFavoriteAsync(Guid userId, SetFavoriteDto dto)
+        {
+            // Kullanıcının varlığını doğrula
+            var user = await _context.USR_Users
+                .FirstOrDefaultAsync(u => u.Id == userId);
+
+            if (user == null)
+                throw new KeyNotFoundException("Kullanıcı bulunamadı.");
+
+            // Aynı favori daha önce eklenmiş mi?
+            bool exists = await _context.USR_Favorites
+                .AnyAsync(f => f.UserId == userId && f.QuoteId == dto.QuoteId);
+            if (exists)
+                return;
+
+            // Yeni favorite kaydı
+            var fav = new USR_Favorites
+            {
+                Id = Guid.NewGuid(),
+                UserId = userId,
+                QuoteId = dto.QuoteId,
+            };
+
+            _context.USR_Favorites.Add(fav);
+            await _context.SaveChangesAsync();
         }
 
     }

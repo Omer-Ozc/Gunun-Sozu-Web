@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using GununSozu.Business.DTOs;
 using GununSozu.Data.Models;
+using System.Security.Claims;
+using GununSozu.Business.Services;
 
 namespace GununSozu.Api.Controllers
 {
@@ -53,5 +55,24 @@ namespace GununSozu.Api.Controllers
 
             return Ok(quotes);
         }
+
+
+        [HttpPost("Setfavorite")]
+        public async Task<IActionResult> SetFavorite([FromBody] SetFavoriteDto dto)
+        {
+            if (dto == null || dto.QuoteId == Guid.Empty)
+                return BadRequest("Eksik bilgi.");
+
+            // JWT içerisinden UserId alın (NameIdentifier ya da sub claim)
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (!Guid.TryParse(userIdClaim, out var userId))
+                return Unauthorized();
+            
+            var _quoteService = new QuoteService(_context);
+            await _quoteService.SetFavoriteAsync(userId, dto);
+            return NoContent();
+        }
+
     }
 }

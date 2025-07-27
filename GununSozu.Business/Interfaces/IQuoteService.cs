@@ -12,6 +12,6 @@ namespace GununSozu.Business.Interfaces
         Task AddQuoteAsync(QTE_Quotes quote);
         Task UpdateQuoteAsync(QTE_Quotes quote);
         Task DeleteQuoteAsync(Guid id);
-
+        Task SetFavoriteAsync(Guid UserId, SetFavoriteDto dto);
     }
 }
