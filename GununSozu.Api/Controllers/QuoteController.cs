@@ -34,5 +34,24 @@ namespace GununSozu.Api.Controllers
 
             return Ok(quotes);
         }
+
+        [HttpGet("GetToday")]
+        public async Task<ActionResult<IEnumerable<QuoteDto>>> GetToday()
+        {
+            var quotes = await _context.QTE_Quotes
+                .Include(q => q.Category)
+                .Include(q => q.Language)
+                .Select(q => new QuoteDto
+                {
+                    Id = q.Id,
+                    Content = q.Content,
+                    Author = q.Author,
+                    IsActive = q.IsActive,
+                    CategoryName = q.Category.Name,
+                    LanguageName = q.Language.Name
+                }).FirstOrDefaultAsync();
+
+            return Ok(quotes);
+        }
     }
 }
