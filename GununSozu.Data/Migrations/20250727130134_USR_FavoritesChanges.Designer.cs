@@ -4,6 +4,7 @@ using GununSozu.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GununSozu.Data.Migrations
 {
     [DbContext(typeof(GununSozuDbContext))]
-    partial class GununSozuDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250727130134_USR_FavoritesChanges")]
+    partial class USR_FavoritesChanges
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
