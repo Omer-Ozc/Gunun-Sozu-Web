@@ -7,7 +7,7 @@ namespace GununSozu.Data.Models
     public class USR_Deliveries
     {
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
 
         [ForeignKey(nameof(User))]
         public Guid UserId { get; set; }
@@ -20,7 +20,7 @@ namespace GununSozu.Data.Models
         public bool WasLiked { get; set; }
 
         // Navigation
-        public virtual USR_Users User { get; set; }
+        public virtual ApplicationUser User { get; set; }
         public virtual QTE_Quotes Quote { get; set; }
     }
 }

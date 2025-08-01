@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GununSozu.Data.Models
@@ -17,6 +18,6 @@ namespace GununSozu.Data.Models
         public int PreferredCategory { get; set; }
 
         // Navigation
-        public virtual USR_Users User { get; set; }
+        public virtual ApplicationUser User { get; set; }
     }
 }
