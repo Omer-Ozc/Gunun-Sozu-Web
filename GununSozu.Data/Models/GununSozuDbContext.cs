@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GununSozu.Data.Models;
 
-public partial class GununSozuDbContext : IdentityDbContext<IdentityUser>
+public partial class GununSozuDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
 {
     public GununSozuDbContext(DbContextOptions<GununSozuDbContext> options)
         : base(options)
@@ -15,7 +15,6 @@ public partial class GununSozuDbContext : IdentityDbContext<IdentityUser>
     public virtual DbSet<QTE_Categories> QTE_Categories { get; set; }
     public virtual DbSet<SYS_Language> SYS_Language { get; set; }
 
-    public virtual DbSet<USR_Users> USR_Users { get; set; }
     public virtual DbSet<USR_Preferences> USR_Preferences { get; set; }
     public virtual DbSet<USR_Favorites> USR_Favorites { get; set; }
     public virtual DbSet<USR_Deliveries> USR_Deliveries { get; set; }
@@ -28,7 +27,6 @@ public partial class GununSozuDbContext : IdentityDbContext<IdentityUser>
         modelBuilder.Entity<QTE_Categories>().ToTable("QTE_Categories");
         modelBuilder.Entity<SYS_Language>().ToTable("SYS_Language");
 
-        modelBuilder.Entity<USR_Users>().ToTable("USR_Users");
         modelBuilder.Entity<USR_Preferences>().ToTable("USR_Preferences");
 
         modelBuilder.Entity<USR_Favorites>()

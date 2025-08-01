@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GununSozu.Data.Models
@@ -16,7 +17,7 @@ namespace GununSozu.Data.Models
 
         public bool? IsLiked { get; set; }
         // Navigation
-        public virtual USR_Users User { get; set; }
+        public virtual ApplicationUser User { get; set; }
         public virtual QTE_Quotes Quote { get; set; }
     }
 }

@@ -4,6 +4,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using GununSozu.Data.Models;
+using System;
 
 namespace GununSozu.Api.Controllers;
 
@@ -11,10 +13,10 @@ namespace GununSozu.Api.Controllers;
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
-    private readonly UserManager<IdentityUser> _userManager;
+    private readonly UserManager<ApplicationUser> _userManager;
     private readonly IConfiguration _configuration;
 
-    public AuthController(UserManager<IdentityUser> userManager, IConfiguration configuration)
+    public AuthController(UserManager<ApplicationUser> userManager, IConfiguration configuration)
     {
         _userManager = userManager;
         _configuration = configuration;
@@ -32,6 +34,7 @@ public class AuthController : ControllerBase
             {
                 Subject = new ClaimsIdentity(new[]
                 {
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                     new Claim(ClaimTypes.Name, user.UserName!)
                 }),
                 Expires = DateTime.UtcNow.AddHours(1),

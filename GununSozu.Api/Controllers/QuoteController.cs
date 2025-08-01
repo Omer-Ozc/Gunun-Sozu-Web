@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using GununSozu.Business.DTOs;
 using GununSozu.Data.Models;
 using System.Security.Claims;
@@ -64,11 +65,11 @@ namespace GununSozu.Api.Controllers
                 return BadRequest("Eksik bilgi.");
 
             // JWT içerisinden UserId alın (NameIdentifier ya da sub claim)
-            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var userIdValue = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            if (!Guid.TryParse(userIdClaim, out var userId))
+            if (string.IsNullOrEmpty(userIdValue) || !Guid.TryParse(userIdValue, out var userId))
                 return Unauthorized();
-            
+
             var _quoteService = new QuoteService(_context);
             await _quoteService.SetFavoriteAsync(userId, dto);
             return NoContent();

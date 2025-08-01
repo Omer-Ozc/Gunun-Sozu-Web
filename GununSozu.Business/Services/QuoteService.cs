@@ -2,6 +2,7 @@
 using GununSozu.Business.Interfaces;
 using GununSozu.Data.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace GununSozu.Business.Services
 {
@@ -74,7 +75,7 @@ namespace GununSozu.Business.Services
         public async Task SetFavoriteAsync(Guid userId, SetFavoriteDto dto)
         {
             // Kullanıcının varlığını doğrula
-            var user = await _context.USR_Users
+            var user = await _context.Users
                 .FirstOrDefaultAsync(u => u.Id == userId);
 
             if (user == null)

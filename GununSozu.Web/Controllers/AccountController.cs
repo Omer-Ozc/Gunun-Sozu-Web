@@ -1,14 +1,15 @@
 using GununSozu.Web.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using GununSozu.Data.Models;
 
 namespace GununSozu.Web.Controllers;
 
 public class AccountController : Controller
 {
-    private readonly SignInManager<IdentityUser> _signInManager;
+    private readonly SignInManager<ApplicationUser> _signInManager;
 
-    public AccountController(SignInManager<IdentityUser> signInManager)
+    public AccountController(SignInManager<ApplicationUser> signInManager)
     {
         _signInManager = signInManager;
     }
