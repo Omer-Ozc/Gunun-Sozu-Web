@@ -2,6 +2,7 @@ using GununSozu.Business.Interfaces;
 using GununSozu.Business.Services;
 using GununSozu.Data.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,9 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IQuoteService, QuoteService>();
 
-
 builder.Services.AddDbContext<GununSozuDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<GununSozuDbContext>()
+    .AddDefaultTokenProviders();
 
 var app = builder.Build();
 
@@ -28,6 +32,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 
