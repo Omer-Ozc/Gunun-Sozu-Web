@@ -1,0 +1,88 @@
+# -----------------------------
+# Visual Studio
+# -----------------------------
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# -----------------------------
+# Build outputs
+# -----------------------------
+**/bin/
+**/obj/
+**/[Rr]elease/
+**/[Dd]ebug/
+**/publish/
+
+# -----------------------------
+# Rider
+# -----------------------------
+.idea/
+
+# -----------------------------
+# NUGET
+# -----------------------------
+# Paket önbellekleri
+**/packages/
+# Paket oluşturma
+*.nupkg
+# dotnet paketleri
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# -----------------------------
+# .NET Core / ASP.NET Core
+# -----------------------------
+# Kestrel çalıştırma dosyaları
+appsettings*.json.user
+# Dosya paylaşımları
+*.pid
+*.log
+
+# -----------------------------
+# Entity Framework Migrations
+# -----------------------------
+# Migration snapshot dosyaları (isteğe bağlı, eğer versiyonlamak istemiyorsan)
+# **/Migrations/*Snapshot.cs
+
+# -----------------------------
+# User-specific files
+# -----------------------------
+*.swp
+*~
+
+# -----------------------------
+# OS Files
+# -----------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows thumbnail cache
+Thumbs.db
+ehthumbs.db
+
+# -----------------------------
+# JetBrains Rider
+# -----------------------------
+.idea/
+
+# -----------------------------
+# Node / React Native (isteğe bağlı)
+# -----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------------
+# Optional: environment variables
+# -----------------------------
+.env
+.env.*
+
+# EOF
