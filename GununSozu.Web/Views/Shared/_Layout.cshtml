@@ -16,7 +16,18 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" asp-area="Admin" asp-controller="Quote" asp-action="Index">Sözler</a></li>
-                    <!-- Diğer menüler buraya -->
+                    @if (User?.Identity?.IsAuthenticated ?? false)
+                    {
+                        <li class="nav-item">
+                            <form class="d-inline" asp-controller="Account" asp-action="Logout" method="post">
+                                <button type="submit" class="nav-link btn btn-link">Çıkış (@User.Identity?.Name)</button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item"><a class="nav-link" asp-controller="Account" asp-action="Login">Giriş</a></li>
+                    }
                 </ul>
             </div>
         </div>
